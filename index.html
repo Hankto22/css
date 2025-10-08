@@ -1,108 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Media AI Dashboard</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./images/images/favicon-32x32.png" />
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Google Fonts Backup -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media with AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="container">
 
-    <!-- Create & Schedule -->
-    <div class="card create fade-in">
-      <img src="./images/images/illustration-create-post.webp" alt="Create Content Illustration" class="icon-bg">
-      <h3>Create and schedule<br>content <span class="highlight">quicker.</span></h3>
-      <button class="btn">Create Post</button>
+    <div class="card peach item-one">
+      <h3>Create and schedule content <span>quicker</span></h3>
+      <img src="./images/images/illustration-create-post.webp" alt="Create post">
     </div>
 
-    <!-- Main Hero -->
-    <div class="card main fade-in">
-      <img src="./images/images/illustration-five-stars.webp" alt="Five Stars" class="icon-bg main-icon">
-      <h2>Social Media <span class="highlight">10x Faster</span> with AI</h2>
-      <p class="stars">⭐⭐⭐⭐⭐</p>
+    <div class="card purple center item-two">
+      <h2>Social Media <span class="fol">10x</span> <br>Faster with AI</h2>
+      <div class="stars"><img src="./images/images/illustration-five-stars.webp" alt="Stars"></div>
       <p>Over 4,000 5-star reviews</p>
     </div>
 
-    <!-- Schedule Chart -->
-    <div class="card schedule fade-in">
-      <img src="./images/images/illustration-schedule-posts.webp" alt="Schedule Posts" class="icon-bg small">
+    <div class="card light-purple item-three">
       <h3>Schedule to social media.</h3>
-      <p class="chart-title">Best Time to Post</p>
+
       <div class="chart">
-        <div class="bar" style="height:75%"></div>
-        <div class="bar" style="height:95%"></div>
-        <div class="bar" style="height:100%"></div>
-        <div class="bar" style="height:60%"></div>
-        <div class="bar" style="height:45%"></div>
+        <p><strong>Best Time to Post</strong></p>
+        <img src="./images/images/illustration-schedule-posts.webp" alt="Schedule posts">
+        <p>Optimize post timings to publish content at the perfect time for your audience.</p>
       </div>
-      <p class="chart-desc">Optimize post timings to publish content at the perfect time for your audience.</p>
     </div>
 
-    <!-- Write with AI -->
-    <div class="card write fade-in">
-      <img src="./images/images/illustration-ai-content.webp" alt="AI Content" class="icon-bg small">
-      <h3>Write your content<br>using <span class="highlight">AI.</span></h3>
-      <p class="example">“Give me 5 tips for Instagram growth.”</p>
+    <div class="card yellow item-four">
+      <h3>Write your content using AI.</h3>
+      <img src="./images/images/illustration-ai-content.webp" alt="AI content">
     </div>
 
-    <!-- Manage -->
-    <div class="card manage fade-in">
-      <img src="./images/images/illustration-multiple-platforms.webp" alt="Manage Accounts" class="icon-bg small">
-      <h3>Manage multiple accounts<br>and platforms.</h3>
+    <div class="card white item-five">
+      <h3>Manage multiple accounts and platforms.</h3>
+      <img src="./images/images/illustration-multiple-platforms.webp" alt="Multiple platforms">
     </div>
 
-    <!-- Growth -->
-    <div class="card growth fade-in">
-      <img src="./images/images/illustration-audience-growth.webp" alt="Audience Growth" class="icon-bg small">
+    <div class="card yellow item-six">
+      <h3>Maintain a consistent posting schedule.</h3>
+      <div class="image-box">
+        <img src="./images/images/illustration-consistent-schedule.webp" alt="Consistent schedule">
+      </div>
+    </div>
+
+    <div class="card purple item-seven">
+      
+      <img src="./images/images/illustration-grow-followers.webp" alt="Grow followers">
+      <h3>Grow followers with <br> non-stop content.</h3>
+    </div>
+
+    <div class="card white item-eight">
       <h2>>56%</h2>
       <p>faster audience growth</p>
-    </div>
-
-    <!-- Schedule Consistent -->
-    <div class="card schedule-consistent fade-in">
-      <img src="./images/images/illustration-consistent-schedule.webp" alt="Consistent Schedule" class="icon-bg small">
-      <h3>Maintain a consistent<br>posting schedule.</h3>
-      <p class="date">August 2024 • Weekly</p>
-    </div>
-
-    <!-- Followers -->
-    <div class="card followers fade-in">
-      <img src="./images/images/illustration-grow-followers.webp" alt="Grow Followers" class="icon-bg">
-      <h3>Grow followers with<br>non-stop content.</h3>
-      <div class="stats">
-        <p>Follower Growth</p>
-        <h2>20,642</h2>
-        <p>+89,532 this month</p>
-      </div>
-    </div>
-
-  </div>
-
-  <script>
-    // Scroll fade-in animation
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-
-    const appearOnScroll = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => appearOnScroll.observe(fader));
-  </script>
-
+      <img src="./images/images/illustration-audience-growth.webp" alt="Audience growth">
+    </div>  </div>
 </body>
 </html>
+ 
